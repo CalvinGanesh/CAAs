@@ -1,5 +1,5 @@
 .container {
-    width: 50%;
+    width: 85%;
     height: 47px;
     flex-shrink: 0;
     border-radius: 12px;
@@ -11,6 +11,7 @@ input {
 }
 
 img {
+    
     float: right;
     margin: 10px;
 }
@@ -21,10 +22,11 @@ img {
     margin-top: 13px;
     margin-left: 10px;
     font-size: 16px;
+    width: 355px;
 }
 
 .dd {
-    width: 392px;
+    width: 425px;
     height: fit-content;
     border-radius: 0px 0px 16px 16px;
     border: 0.5px solid #526D82;
@@ -38,4 +40,5 @@ img {
     font-size: 14px;
     font-family: 'Nunito';
     padding: 10px 10px;
+    width: 355px;
 }

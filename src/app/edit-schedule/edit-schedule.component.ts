@@ -10,10 +10,14 @@ import { Subscription } from 'rxjs/internal/Subscription';
 })
 export class EditScheduleComponent {
 
- 
-  selectedOption1: string | undefined;
-  selectedOption2: string | undefined;
-  selectedOption3: string | undefined;
+ cnitems=["Aviation Security Programmee in Public Policy","Air Traffic Safety Electronics Personnel Basic",
+ "ICAO PANS-OPS Instrument","Senior Airport Fire Officers","Aeronautical Search and Rescue Operations"];
+ cditems=["Online","Offline","Hybrid"];
+ sitems=["Active","Inactive"]
+
+  // selectedOption1: string | undefined;
+  // selectedOption2: string | undefined;
+  // selectedOption3: string | undefined;
   // name = new FormControl();
   // dropdown = new FormControl();
   // options = ['Aviation Security Programmeein Public Policy', 
