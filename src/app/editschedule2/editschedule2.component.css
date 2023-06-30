@@ -1,17 +1,3 @@
-<<<<<<< Updated upstream
-.team_member {
-    width: 171px;
-    height: 33px;
-    margin-top: 90px;
-    margin-left: 200px;
-
-}
-
-.title {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 85vw;
-=======
 .container {
     position: absolute;
     top: 0;
@@ -29,7 +15,6 @@
 .title {
     margin-top: 50px;
     margin-left: 350px;
->>>>>>> Stashed changes
 }
 
 .title h1 {
@@ -47,17 +32,10 @@
    top: -80px;
 }
 
-<<<<<<< Updated upstream
-.col {
-    position: relative;
-    left: 480px;
-    top: 20px;
-=======
 .table-title h1 {
     font-size: 24px;
     font-family: 'Nunito';
     font-weight: 500;
->>>>>>> Stashed changes
 }
 
 .form-container {
@@ -76,18 +54,11 @@
     margin: 5px;
 }
 
-<<<<<<< Updated upstream
-.col-1 {
+.marker .tag {
     position: relative;
-    left: -300px;
-    top: 20px;
+    left: 10px;
 }
 
-.col-2 {
-    position: relative;
-    left: -300px;
-    top: 20px;
-=======
 .topper .second {
     width: 31px;
     height: 31px;
@@ -106,7 +77,6 @@
     border: 0.3px solid #7E7E7E;
     background: #FFF;
     margin-left: 30px;
->>>>>>> Stashed changes
 }
 
 .topper {
@@ -118,53 +88,6 @@
     font-size: 12px;
 }
 
-<<<<<<< Updated upstream
-.col-4 button{
-    border: 1px solid #000000;
-    background-color: #ffffff;
-    border-radius: 9px;
-    border-color: #526D82;
-    width: 160px;
-    height: 40px;
-    margin-top: 25px;
-    margin-left: 115px;
-    
-}
-.dropdown{
-    margin-left: 20px;
-    margin-top: -30px;
-    text-align: left;
-    padding-left: 20px;
-    width: 160px;
-    height: 38px;
-    border: 0.3px solid #000000;
-    border-radius: 6px;
-    background-color: #ffffff;
-    background: url("/assets/down arrow.svg")90% / 10% no-repeat white;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font: Open sans;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-input{
-    margin-left: 20px;
-    margin-top: -20px;
-    padding-top: 0px;
-    padding-left: 16px;
-    width: 160px;
-    height: 38px;
-    border: 0.3px solid #000000;
-    border-radius: 6px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font: Open Sans;
-    font-size: 12px;
-    font-weight: 500;
-=======
 .topper .hr {
     width: 103px;
     height: 40px;
@@ -182,7 +105,6 @@ input{
 .topper .second p {
     color: #FFF;
     font-size: 22px;
->>>>>>> Stashed changes
 }
 
 .topper .first p, .topper .second p {
@@ -191,11 +113,6 @@ input{
     font-size: 22px;
 }
 
-<<<<<<< Updated upstream
-.col-8 h5{
-    margin-top: 25px;
-margin-left: -180px;
-=======
 .table-title {
     margin-left: 80px;
     margin-top: 100px;
@@ -203,7 +120,6 @@ margin-left: -180px;
 
 .table-title h1, .table-title button {
     display: inline;
->>>>>>> Stashed changes
 }
 
 .table-title button {
@@ -243,18 +159,6 @@ margin-left: -180px;
     text-align: center;
 }
 
-<<<<<<< Updated upstream
-.row-1 th {
-    background-color: #d3d3d3;
-    height: 5vw;
-    font: OpenSans;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.row-1 tr {
-    border-bottom: 1px solid #d3d3d3;
-=======
 .table .header p {
     display: inline;
     margin-left: 120px;
@@ -276,7 +180,6 @@ margin-left: -180px;
     flex-shrink: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
->>>>>>> Stashed changes
 }
 
 .item input{
@@ -297,18 +200,6 @@ margin-left: -180px;
     width: 150px;
 }
 
-<<<<<<< Updated upstream
-.btn-1{
-    width: 100px;
-    height: 40px;
-    margin-left: 200px;
-    margin-top: 30px;
-    margin-bottom: 75px;
-    padding: 0px 14px 0px 14px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: white;
-=======
 .delete {
     width: 31px;
     height: 31px;
@@ -317,28 +208,10 @@ margin-left: -180px;
     border: 0.3px solid #7E7E7E;
     background: #E8E8E8;        
 }
->>>>>>> Stashed changes
 
 .delete img {
     margin: 7px;
 }
-<<<<<<< Updated upstream
-.btn-2 {
-    width: 100px;
-    height: 40px;
-    margin-left: 70px;
-    margin-top: 30px;
-    margin-bottom: 75px;
-    padding: 0px 14px 0px 14px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: #526D82;
-    color: white;
-}
-/* tr:hover {
-    background-color: #f4f2f2e2;
-} */
-=======
 
 input {
     border-radius: 12px;
@@ -395,4 +268,3 @@ button {
     margin: 50px;
     border-top: black solid;
 }
->>>>>>> Stashed changes
