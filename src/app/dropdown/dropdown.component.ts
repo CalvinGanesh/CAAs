@@ -28,5 +28,6 @@ export class DropdownComponent implements OnInit {
     }
     document.getElementById(id)?.style.setProperty('background', 'rgba(82, 109, 130, 1)');
     document.getElementById(id)?.style.setProperty('color', 'white');
+    this.pressed = !this.pressed;
   }
 }

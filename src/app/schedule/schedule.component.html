@@ -6,15 +6,22 @@
         <div class="green-badge">
             <p>05</p>
         </div>
-        <div class="buttons">
-            <button id="export">Export</button>
+        <div class="buttons" style="float: right; margin-right: 30px;">
+            <input type="file" id="input" name="somename" size="chars">
+            <button id="export" (click)="upload()">
+                <p style="display: inline-block;">Export</p>
+                <img src="/assets/download-folder.svg" alt="icon">
+            </button>
             <div class="list-view">
                 <div class="white-badge">
-                    <img src="/assets/list-icon" alt="list-icon">
+                    <img src="/assets/list-icon.svg" alt="list-icon">
                 </div>
                 <button id="list-view">List View</button>
             </div>
-            <button id="show">Show: All</button>
+            <button id="show">
+                <p style="display: inline-block;">Show: All</p>
+                <img src="/assets/collapse.svg" alt="collapse">
+            </button>
         </div>
     </div>
     <div class="table">
@@ -31,74 +38,25 @@
             <div class="end-date">
                 <p>{{item.enddate}}</p>
             </div>
-            <div class="action">
-                <img src="/assets/ellipses.svg" alt="">
+            <div class="option">
+                <div class="dropdown" *ngIf="item.optselected">
+                    <div class="tab">
+                        <img src="/assets/pencil.svg" alt="pencil">
+                        <p>Edit</p>
+                    </div>
+                    <div class="tab">
+                        <img src="/assets/delete.svg" alt="delete">
+                        <p>Delete</p>
+                    </div>
+                    <div class="tab">
+                        <img src="/assets/people.svg" alt="person">
+                        <p>Attendance</p>
+                    </div>
+                </div>
+                <div class="action" (click)="selectopt(item)">
+                    <img src="/assets/ellipses.svg" alt="ellipses">
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- 
-<section class="team_member section-padding">
-    <div class="row" style="--bs-gutter-x: 0rem;">
-        <div class="col-6">
-            <h4>Schedule Class Listing :</h4>
-        </div>
-        <div class="col-2">
-            <button class="button">Export
-                <span><img src="assets/Export button.svg"></span>
-            </button>
-        </div>
-        <div class="col-2">
-            <img src="assets/List view.svg">
-        </div>
-        <div class="col-2">
-            <button class="btn">Show: All
-                <span><img src="assets/down arrow.svg"></span>
-            </button>
-
-        </div>
-    </div>
-    <div class="row-1">
-        <table>
-            <tr>
-                <th style="width: 30%;padding-left: 70px;">Course Name</th>
-                <th style="width: 10%;">StartDate</th>
-                <th style="width: 15%;">End Date</th>
-                <th style="width: 7%;">Action</th>
-            </tr>
-            <tr>
-                <td style="padding-left: 40px;">Aviation Security Programmee
-                    in Public Policy</td>
-                <td>01-07-2023</td>
-                <td>10-07-2023</td>
-                <td style="padding-left: 1%;"><img src="assets/menu tab.svg"></td>
-            </tr>
-            <tr>
-                <td style="padding-left:40px;">Air Traffic Safety Electronics
-                    Personnel Basic</td>
-                <td>26-06-2023</td>
-                <td>27-07-2023</td>
-                <td style="padding-left: 1%;"><img src="assets/menu tab.svg"></td>
-            </tr>
-            <tr>
-                <td style="padding-left: 40px;">ICAO PANS-OPS Instrument</td>
-                <td>01-07-2023</td>
-                <td>27-09-2023</td>
-                <td style="padding-left: 1%;"><img src="assets/menu tab.svg"></td>
-            </tr>
-            <tr>
-                <td style="padding-left: 40px;">Senior Airport Fire Officers</td>
-                <td>23-06-2023</td>
-                <td>24-07-2023</td>
-                <td style="padding-left: 1%;"><img src="assets/menu tab.svg"></td>
-            </tr>
-            <tr>
-                <td style="padding-left: 40px;">Aeronautical Search and 
-                    Rescue Operations</td>
-                <td>23-06-2023</td>
-                <td>24-07-2023</td>
-                <td style="padding-left: 1%;"><img src="assets/menu tab.svg"></td>
-            </tr>
-        </table>
-    </div>
-</section> -->
