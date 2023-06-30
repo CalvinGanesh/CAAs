@@ -6,7 +6,7 @@ describe('Editschedule2Component', () => {
   let component: Editschedule2Component;
   let fixture: ComponentFixture<Editschedule2Component>;
 
-  beforeEach(async () => {
+  beforeEach(async () =>  {
     await TestBed.configureTestingModule({
       declarations: [ Editschedule2Component ]
     })

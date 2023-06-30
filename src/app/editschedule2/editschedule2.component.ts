@@ -12,7 +12,7 @@ export class Editschedule2Component {
   
       
   
-  selectedOption1: string | undefined;
+  selectedOption1: string |  undefined;
   selectedOption2: string | undefined;
   // public date = new Date();
   // name = new FormControl();
