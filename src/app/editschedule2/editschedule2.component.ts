@@ -12,7 +12,6 @@ export class Editschedule2Component {
   Initems=["Tan Boon",
 "Timothy"];
  
-
 Litems=["Data base",
 "test lab-1",
 "test lab-2",
