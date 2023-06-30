@@ -1,8 +1,8 @@
 .team_member {
     width: 171px;
     height: 33px;
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 150px;
+    margin-left: 350px;
     margin-bottom: 30px;
 }
 
@@ -10,6 +10,7 @@
     border: 1px solid black;
     border-radius: 10px;
     width: 70vw;
+    /* height: 70vw; */
 }
 
 .title h5 {
@@ -24,7 +25,11 @@
     border-radius: 5px; */
 
 }
-
+.conatainer{
+    position: relative;
+    left: 360px;
+    top: 20px;
+}
 .col {
     position: relative;
     left: 360px;
@@ -43,14 +48,14 @@
 
 .col-1 {
     position: relative;
-    left: -291px;
-    top: 20px;
+    left: 402px;
+    top: -50px;
 }
 
 .col-2 {
     position: relative;
-    left: -247px;
-    top: 20px;
+    left: 515px;
+    top: -71px;
 }
 
 .col-2 p {
