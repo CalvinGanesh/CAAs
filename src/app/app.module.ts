@@ -15,6 +15,7 @@ import { Editschedule2Component } from './editschedule2/editschedule2.component'
 import { ScheduleComponent } from './schedule/schedule.component';
 import { DndDirective } from './dnd.directive';
 import { MultiSelectDropdownComponent } from './multi-select-dropdown/multi-select-dropdown.component';
+import { DdComponent } from './editschedule2/dd/dd.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MultiSelectDropdownComponent } from './multi-select-dropdown/multi-sele
     Editschedule2Component,
     ScheduleComponent,
     DndDirective,
-    MultiSelectDropdownComponent
+    MultiSelectDropdownComponent,
+    DdComponent
   ],
   imports: [
     BrowserModule,
