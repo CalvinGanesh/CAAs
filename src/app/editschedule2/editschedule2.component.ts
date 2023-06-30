@@ -9,6 +9,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./editschedule2.component.css']
 })
 export class Editschedule2Component {
+<<<<<<< Updated upstream
   
       
   
@@ -33,15 +34,18 @@ export class Editschedule2Component {
   // ]
   // public maxDate = new Date(2022, 5, 0);
   // public minDate = new Date(2022, 0, 1);
+=======
+  headeritems = ['Start Date', 'End Date', 'Instructor', 'Lab']
+  items = ['', '']
+  index = 0;
+>>>>>>> Stashed changes
 
-  // dateFilter = (date: Date | null): boolean => {
-  //   const day = date?.getDay();
-  //   return day !== 0;
-  // };
-  ngOnInit() {
-    // this.testSubscription = this.dropdown.valueChanges
-    //   // .pipe(debounceTime(100))
-    //   .subscribe(value => console.log(value));
+  deleteItem(i:number) {
+    this.items.splice(i, 1);
+    console.log(i);
   }
 
+  addItem() {
+    this.items.push('');
+  }
 }

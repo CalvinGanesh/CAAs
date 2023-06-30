@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <section class="team_member section-padding">
     <div class="title">
         <h5>Course Editing</h5>
@@ -168,18 +169,69 @@
                 </tr> 
             </table>
         </div>  
+=======
+<div class="container">
+    <div class="form-container">
+        <div class="title">
+            <h1>Schedule Course Editing</h1>
+            <div class="topper">
+                <div class="marker">
+                    <div class="first">
+                        <p>1</p>
+                    </div>
+                    <p>Edit Course Create</p>
+                </div>
+                <div class="hr">
+                </div>
+                <div class="marker">
+                    <div class="second">
+                        <p>2</p>
+                    </div>
+                    <p>Instructor & Lab</p>   
+                </div>
+            </div>
+        </div>
+        <div class="table-title">
+            <h1>Assign Instructor & Lab Schedule</h1>
+            <button id="add" (click)="addItem()">
+                <img src="/assets/Close.svg" alt="plus">
+                <p>Add</p>
+            </button>
+        </div>
+>>>>>>> Stashed changes
         <form>
-            <div class="row">
-                <div class="col-6">
-        <button class="btn">Back</button> 
-                </div> 
-                <div class="col-3">
-        <button class="btn-1">Cancel</button> 
+            <div class="table">
+                <div class="header">
+                    <p *ngFor="let h of headeritems;">{{h}}</p>
                 </div>
-                <div class="col-3"> 
-        <button class="btn-2">Submit</button>  
+                <div class="item" *ngFor="let item of items;index as i">
+                    <p style="display: none;">{{i+1}}</p>
+                    <div class="start-date">
+                        <input type="datetime-local" name="start-date" id="start-date">
+                    </div>
+                    <div class="end-date">
+                        <input type="datetime-local" name="end-date" id="end-date">
+                    </div>
+                    <div class="instructor">
+                        <app-dd [items]="['Timothy']"></app-dd>
+                    </div>
+                    <div class="Lab">
+                        <app-dd [items]="[]"></app-dd>
+                    </div>
+                    <div class="delete" (click)="deleteItem(i)">
+                        <img src="/assets/delete.svg" alt="delete">
+                    </div>
                 </div>
+            </div>
+            <div class="buttons">
+                <button id="back">Back</button>
+                <button id="cancel">Cancel</button>
+                <button type="submit" id="submit">Submit</button>
             </div>
         </form>
     </div>
-</section>
+    <div class="footer">
+        <p style="font-weight: bold;">&copy;  2023 CAAS Training Institute. All Rights Reserved</p>
+        <p>Terms of Service Private Policy</p>
+    </div>
+</div>
