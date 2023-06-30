@@ -1,0 +1,240 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F8F8F8;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 1189px;
+    display: block;
+    z-index: -10;
+    align-items: center;
+    font-family: 'Nunito';
+}
+
+.title {
+    margin-top: 150px;
+    margin-left: 350px;
+}
+
+.title h1 {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-family: 'Nunito';
+    font-weight: 500;
+}
+
+.form-container {
+    width: 1069px;
+    height: 1038px;
+    flex-shrink: 0;
+    border-radius: 38px;
+    border: 1px solid #7E7E7E;
+    background: #FFF;
+    margin-left: 350px;
+}
+
+.marker {
+    display: inline-block;
+    margin: 5px;
+}
+
+.topper .second {
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    border: 0.3px solid #D64E49;
+    background: #D64E49;
+    margin-left: 30px;
+}
+
+.topper .first {
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    border: 0.3px solid #7E7E7E;
+    background: #FFF;
+    margin-left: 30px;
+}
+
+.topper {
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.topper p {
+    font-size: 12px;
+}
+
+.topper .hr {
+    width: 103px;
+    height: 40px;
+    flex-shrink: 0;
+    border-top: solid 2px;
+    border-color: rgba(214, 78, 73, 1);
+    display: inline-block;
+}
+
+.topper .first p{
+    margin-top: 2px;
+    margin-left: 8px;
+}
+
+.topper .second p {
+    color: #FFF;
+    font-size: 22px;
+}
+
+.topper .first p, .topper .second p {
+    margin-top: 2px;
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+input {
+    border-radius: 12px;
+    padding-left: 10px;
+    border: 0.3px solid #7A7A7A;
+    width: fit-content;
+    font-family: 'Nunito';
+}
+
+form {
+    margin-left: 100px;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 1;
+}
+
+form p {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 14px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+input {
+    width: 240px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 0.3px solid #7A7A7A;
+    background: #FFF;
+}
+
+.thumbnail .box {
+    width: 852px;
+    height: 154px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1.5px dashed #7A7A7A;
+    background: #FFF;
+    text-align: center;
+    line-height: 10px;
+    padding: 20px 0;
+}
+
+.thumbnail .box h3 {
+    color: #252F40;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.thumbnail .box p {
+    color: #252F40;
+    font-size: 12px;
+}
+
+.thumbnail .box .bottom-text {
+    color: #252F40;
+    font-size: 10px;
+    margin-top: 40px;
+    float: left;
+}
+
+.thumbnail .box .bottom-text p{
+    display: inline;
+    margin-left: 200px;
+}
+
+.thumbnail input {
+    opacity: 0;
+    z-index: 20;
+    width: 850px;
+    height: 150px;
+    position: absolute;
+    top: 540px;
+    left: 480px;
+}
+
+.second-table {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(2, 450px);
+}
+
+.second-table div {
+    width: 400px;
+}
+
+.second-table p {
+    margin: 10px;
+}
+
+.website-link input{
+    width: 380px;
+}
+
+.second-table .certificates {
+    width: 853px;
+}
+
+button {
+    display: flex;
+    width: 114px;
+    height: 37px;
+    padding: 0px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #526D82;
+    background: #FFF;   
+    font-family: 'Nunito';
+    display: inline;
+}
+
+#back {
+    position: relative;
+    top: 40px;
+}
+
+#cancel {
+    margin-left: 465px;
+    position: relative;
+    top: 45px;
+}
+
+#submit {
+    margin-left: 740px;
+    background: #526D82;
+    color: #FFF;
+    position: relative;
+    top: 5px;
+}
+
+.footer {
+    width: 90%;
+    text-indent: 50px;
+    margin: 50px;
+    border-top: black solid;
+}

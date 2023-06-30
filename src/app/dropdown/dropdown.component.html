@@ -1,0 +1,10 @@
+<input style="visibility: hidden" placeholder="{{selected}}">
+<div class="container" (click)="press()">
+    <p>{{selected}}</p>
+    <img [ngStyle]="{'transform' :pressed ? 'scaleY(-1)' : 'none'}" src="/assets/drop-down.svg" alt="drop-down">
+</div>
+<div class="dd" *ngIf="pressed">
+    <p>Choose..</p>
+    <p *ngFor="let item of items"
+    (click)="select(item)" id="{{item}}">{{item}}</p>
+</div>

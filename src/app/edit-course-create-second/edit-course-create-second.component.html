@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="title">
+        <h1 style="color: #7E7E7E;">List</h1>
+        <h1>&nbsp; ></h1>
+        <h1>&nbsp; Edit Course Create</h1>
+    </div>
+    <div class="form-container">
+        <div class="topper">
+            <div class="marker">
+                <div class="first">
+                    <p>1</p>
+                </div>
+                <p>Edit Course Create</p>
+            </div>
+            <div class="hr">
+            </div>
+            <div class="marker">
+                <div class="second">
+                    <p>2</p>
+                </div>
+                <p>Instructor & Lab</p>   
+            </div>
+        </div>
+        <form action="">
+            <div class="first-row">
+                <div class="technical">
+                    <p>PDU Technical</p>
+                    <input type="text" name="pdu-technical" id="pdu-technical">
+                </div>
+                <div class="leadership">
+                    <p>PDU Leadership</p>
+                    <input type="text" name="pdu-leadership" id="pdu-leadership">
+                </div>
+                <div class="strategic">
+                    <p>PDU Strategic</p>
+                    <input type="text" name="pdu-strategic" id="pdu-strategic">
+                </div>
+            </div>
+            <div class="thumbnail">
+                <p>Thumbnail</p>
+                <div class="box" appDnd (fileDropped)="onFileDropped($event)">
+                    <input type="file" #fileDropRef id="fileDropRef" (change)="fileBrowseHandler($event.target)">
+                    <img src="/assets/add-image-icon.svg" alt="add-image-icon">
+                    <h3>Drag & Drop Image, or <label for="fileDropRef" style="background: none; color: #D64E49;">Browse</label></h3>
+                    <p>Max 6 MB each, 12 MB for Videos</p>
+                    <div class="bottom-text">
+                        <p>Aspect Ratio 16: 9</p>
+                        <p>Recommended Size 1024 * 576</p>
+                    </div>
+                </div>
+                <p *ngIf="files.length != 0">File uploaded: {{files[0].name.length > 30 ? (files[0].name | slice:0:30)+'...':(files[0].name)}}</p>
+            </div>
+            <div class="second-table">
+                <div class="website-link">
+                    <p>Website Link</p>
+                    <input type="text" name="website-link" id="website-link"  placeholder="www">
+                </div>
+                <div class="funding">
+                    <p>Funding/Grant</p>
+                    <app-dropdown [items]="['NTU', 'SSG']"></app-dropdown>
+                </div>
+                <div class="survey">
+                    <p>Survey</p>
+                    <app-dropdown 
+                    [items]="['Navigation', 'ICAO PANS-OPS Instrument Procedures', 'Senior Airport Fire Officers',
+                    'Air Traffic Safety Electronics Personnel Communications', 'Airport Fire Safety', 
+                    'Aviation Safety', 'Aviation Management']"></app-dropdown>
+                </div>
+                <div class="assign-instructors">
+                    <p>Assign Instructors</p>
+                    <app-dropdown [items]="['Tan Boon Kheng']"></app-dropdown>
+                </div>
+                <div class="assign-exam">
+                    <p>Assign Exam</p>
+                    <app-multi-select-dropdown [items]="['Course 1', 'Course 2', 'Course 3', 'Course 4', 'Course 5', 'Course 6']"></app-multi-select-dropdown>
+                </div>
+                <div class="assign-coursekit">
+                    <p>Assign Coursekit</p>
+                    <app-multi-select-dropdown [items]="['Aviation', 'Management']"></app-multi-select-dropdown>
+                </div>
+                <div class="certificates">
+                    <p>Certificates</p>
+                    <app-dropdown [items]="[]"></app-dropdown>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="back">Back</button>
+                <button id="cancel">Cancel</button>
+                <button (click)="submit()" type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p style="font-weight: bold;">&copy;  2023 CAAS Training Institute. All Rights Reserved</p>
+        <p>Terms of Service Private Policy</p>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="title">
+        <h1 style="color: #7E7E7E;;">List</h1>
+        <h1>&nbsp; ></h1>
+        <h1>&nbsp; Edit Course Create</h1>
+    </div>
+    <div class="form-container">
+        <div class="top">
+            <div class="marker">
+                <div class="first">
+                    <p>1</p>
+                </div>
+                <p>Edit Course Create</p>
+            </div>
+            <div class="hr">
+            </div>
+            <div class="marker">
+                <div class="second">
+                    <p>2</p>
+                </div>
+                <p>Instructor & Lab</p>   
+            </div>
+        </div>
+        <form action="">
+            <div class="table">
+            <div class="course-name">
+                <p>Course Name</p>
+                <input type="text" placeholder="Search and Rescue Administrators">
+            </div>
+            <div class="course-code">
+                <p>Course Code</p>
+                <input type="text" placeholder="SRA9102">
+            </div>
+            <div class="main-category">
+                <p>Main Category</p>
+                <app-dropdown [items]="mcitems"></app-dropdown>
+            </div>
+            <div class="sub-category">
+                <p>Sub Category</p>
+                <app-dropdown [items]="scitems"></app-dropdown>
+            </div>
+            <div class="time">
+                <div class="days">
+                    <p>Days</p>
+                    <input type="text" placeholder="05">
+                </div>
+                <div class="training">
+                    <p>Training</p>
+                    <input type="text" placeholder="10">
+                </div>
+            </div>
+            <div class="payment">
+                <div class="fees">
+                    <p>Fees</p>
+                    <input type="text" placeholder="2750">
+                </div>
+                <div class="currency">
+                    <p>Currency</p>
+                    <div class="sgd">
+                        <input type="checkbox" name="SGD" id="SGD" checked>
+                        <p>SGD</p>
+                    </div>
+                    <div class="usd">
+                        <input type="checkbox" name="USD" id="USD">
+                        <p>USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-connect-code">
+                <p>Skill Connect Code</p>
+                <input type="text" placeholder="SRA91">
+            </div>
+            <div class="description">
+                <p>Description</p>
+                <input type="text" placeholder="Search and Rescue Administration">
+            </div>
+            <div class="course-detailed-description">
+                <p>Course Detailed Description</p>
+                <input type="text" name="course-detailed-description" id="course-detailed-description" placeholder="SRA91">
+            </div>
+            </div>
+            <button id="back">Back</button>
+            <button id="next"> Next</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p style="font-weight: bold;">&copy;  2023 CAAS Training Institute. All Rights Reserved</p>
+        <p>Terms of Service Private Policy</p>
+    </div>
+</div>
