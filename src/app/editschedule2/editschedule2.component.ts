@@ -9,11 +9,18 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./editschedule2.component.css']
 })
 export class Editschedule2Component {
-  
+  Initems=["Tan Boon",
+"Timothy"];
+ 
+
+Litems=["Data base",
+"test lab-1",
+"test lab-2",
+"test lab-3"];
       
   
-  selectedOption1: string |  undefined;
-  selectedOption2: string | undefined;
+  // selectedOption1: string |  undefined;
+  // selectedOption2: string | undefined;
   // public date = new Date();
   // name = new FormControl();
   // dropdown = new FormControl();

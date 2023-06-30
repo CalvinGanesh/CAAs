@@ -3,7 +3,6 @@
     height: 33px;
     margin-top: 150px;
     margin-left: 350px;
-    display: inline-block;
 }
 
 .title {
@@ -29,8 +28,8 @@
 
 .col {
     position: relative;
-    left: 480px;
-    top: 20px;
+    left: 484px;
+    top: -30px;
 }
 
 .col p {
@@ -45,14 +44,14 @@
 
 .col-1 {
     position: relative;
-    left: -300px;
-    top: 20px;
+    left: 531px;
+    top: -104px;
 }
 
 .col-2 {
     position: relative;
-    left: -300px;
-    top: 20px;
+    left: 656px;
+    top: -127px;
 }
 
 .col-2 p {
@@ -63,7 +62,12 @@
     font-size: 12px;
     font-weight: 600;
 }
-
+.col-8 h5{
+    position: absolute;
+    margin-top: 46px;
+    margin-left: 81px;
+   
+}
 .col-4 button{
     border: 1px solid #000000;
     background-color: #ffffff;
@@ -71,7 +75,7 @@
     border-color: #526D82;
     width: 160px;
     height: 40px;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: 900px;
     
 }
@@ -92,6 +96,7 @@
     font: Open sans;
     font-size: 12px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 input{
@@ -99,10 +104,10 @@ input{
     margin-top: -20px;
     padding-top: 0px;
     padding-left: 16px;
-    width: 160px;
+    width: 176px;
     height: 38px;
     border: 0.3px solid #000000;
-    border-radius: 6px;
+    border-radius: 12px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -120,10 +125,7 @@ input{
     color: #aaa;
   } */
 
-.col-8 h5{
-    margin-top: 25px;
-margin-left: -180px;
-}
+
 
 .row-1 table {
     width: 90%;
@@ -153,13 +155,13 @@ margin-left: -180px;
 .row-1 th {
     background-color: #d3d3d3;
     height: 5vw;
-    font: OpenSans;
-    font-weight: 500;
+    font-family: Open Sans;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .row-1 tr {
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 3px solid #526D82;
 }
 
 .row-1 td {
@@ -185,10 +187,11 @@ margin-left: -180px;
 }
 
 .btn-1{
+    position: absolute;
     width: 100px;
     height: 40px;
-    margin-left: 200px;
-    margin-top: 30px;
+    margin-left: 825px;
+    margin-top: -115px;
     margin-bottom: 75px;
     padding: 0px 14px 0px 14px;
     border-radius: 10px;
@@ -197,15 +200,17 @@ margin-left: -180px;
 
 }
 .btn-2 {
+    position: absolute;
     width: 100px;
     height: 40px;
-    margin-left: 70px;
-    margin-top: 30px;
+    margin-left: 960px;
+    margin-top: -116px;
     margin-bottom: 75px;
     padding: 0px 14px 0px 14px;
     border-radius: 10px;
     border: 1px solid black;
     background-color: #526D82;
+    border-color: #526D82;
     color: white;
 }
 /* tr:hover {
