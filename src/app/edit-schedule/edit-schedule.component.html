@@ -1,4 +1,150 @@
-<section class="team_member section-padding">
+
+<div class="container">
+    <div class="title">
+        <!-- <h1 style="color: #7E7E7E;;">List</h1>
+        <h1>&nbsp; ></h1>
+        <h1>&nbsp; Edit Course Create</h1> -->
+    </div>
+    <div class="form-container">
+        <div class="top">
+            <div class="head">
+                <h4>Schedule Class Editing</h4>
+            </div>
+            <div class="marker">
+                <div class="first">
+                    <p>1</p>
+                </div>
+                <p>Edit Course Create</p>
+            </div>
+            <div class="hr">
+            </div>
+            <div class="marker">
+                <div class="second">
+                    <p>2</p>
+                </div>
+                <p>Instructor & Lab</p>   
+            </div>
+        </div>
+        <form action="">
+            <div class="table">
+            <div class="course-name">
+                <p>Course Name</p>
+                <app-dropdown [items]="cnitems"></app-dropdown>
+                <!-- <input type="text" placeholder="Search and Rescue Administrators"> -->
+            </div>
+            <div class="course-code">
+                <p>Course Code</p>
+                <div class="row">
+                    <div class="col-3" >
+                        <h6 style="position: absolute;left: 1031px;top:423px ;width: 47vw;
+                        font: OpenSans;
+                        font-weight: 600;
+                        font-size: 16px;">Public</h6>
+                            <p style="position: absolute;left: 973px;top: 435px;">
+                                <span><img src="assets/Group 82.svg"></span></p>
+                    </div>
+                    <div class="col-3" >
+                        <h6 style="position: absolute;margin-left: 180px;margin-top:7px ;width: 47vw;
+                        font: OpenSans;
+                        font-weight: 600;
+                        font-size: 16px;">Private</h6>
+                            <p style="position: absolute;margin-left: 130px;top: 435px;">
+                                <span><img src="assets/Checkbox.svg"></span></p>
+                    </div>
+                </div>
+                <!-- <input type="text" placeholder="SRA9102"> -->
+            </div>
+            <div class="skill-connect-code">
+                <p>Class Delivery</p>
+                <app-dropdown [items]="cditems"></app-dropdown>
+            </div>
+            <div class="description">
+                <p>Instructor Cost</p>
+                <input type="text" placeholder="">
+            </div>
+            <!-- <div class="time">
+                <div class="days">
+                    <p>Days</p>
+                    <input type="text" placeholder="05">
+                </div>
+                <div class="training">
+                    <p>Training</p>
+                    <input type="text" placeholder="10">
+                </div>
+            </div>
+            <div class="payment">
+                <div class="fees">
+                    <p>Fees</p>
+                    <input type="text" placeholder="2750">
+                </div>
+                <div class="currency">
+                    <p>Currency</p>
+                    <div class="sgd">
+                        <input type="checkbox" name="SGD" id="SGD" checked>
+                        <p>SGD</p>
+                    </div>
+                    <div class="usd">
+                        <input type="checkbox" name="USD" id="USD">
+                        <p>USD</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="skill-connect-code">
+                <p>Minimum Enrollment</p>
+                <input type="text" placeholder="">
+            </div>
+            <div class="description">
+                <p>Maximum Enrollment</p>
+                <input type="text" placeholder="">
+            </div>
+            <div class="skill-connect-code">
+                <p>Status</p>
+                <app-dropdown [items]="sitems"></app-dropdown>
+            </div>
+            <div class="row">
+                <div class="col-3" >
+                    <h6 style="position: absolute;left: 1031px;top:746px ;width: 47vw;
+                    font: OpenSans;
+                    font-weight: 600;
+                    font-size: 16px;">Is Guaranteed To Run</h6>
+                        <p style="position: absolute;left: 973px;top: 759px;">
+                            <span><img src="assets/Group 82.svg"></span></p>
+                </div>
+                <div class="col-3">
+                    <h6 style="position: absolute;left: 1247px;top:748px ;width: 47vw;
+                    font: OpenSans;
+                    font-weight: 600;
+                    font-size: 16px;"> External Room</h6>
+                        <p style="position: absolute;left: 1192px;top: 760px;"><span><img src="assets/Group 82.svg"></span></p>
+                        
+                </div>
+            </div>
+            <!-- <div class="row">
+            <div class="col-4">
+                <p>Is Guaranteed To Run</p>
+                    <span><img src="assets/Group 82.svg" style="position: relative;;margin-left: 11px;top: 3px;"></span>
+            </div>
+            <div class="col-4">
+                <h6>External Room</h6>
+                <span><img src="assets/Group 82.svg" style="position: absolute;left: 418px;top: -55px;"></span>
+            </div>
+            </div> -->
+        </div>
+           
+            <!-- <div class="course-detailed-description">
+                <p>Course Detailed Description</p>
+                <input type="text" name="course-detailed-description" id="course-detailed-description" placeholder="SRA91">
+            </div> -->
+            <!-- </div> -->
+            <button id="back">Back</button>
+            <button id="next"> Next</button>
+        <!-- </form> -->
+    <!-- </div> -->
+    <!-- <div class="footer">
+        <p style="font-weight: bold;">&copy;  2023 CAAS Training Institute. All Rights Reserved</p>
+        <p>Terms of Service Private Policy</p>
+    </div> -->
+<!-- </div><section class="team_member section-padding">
     <div class="title">
         <h5>Course Editing</h5>
 
@@ -21,7 +167,7 @@
                     <label for="coursename">Course Name</label>
                     <form>
 
-                        <app-dropdown [items]="[]"></app-dropdown>
+                        <app-dropdown [items]="[]"></app-dropdown> -->
                           <!-- <option value="optionA">Choose ...</option>
                           <option value="optionB">Aviation Security Programmee
                             in Public Policy</option>
@@ -33,7 +179,7 @@
                             Rescue Operations</option>
                           
                         </select> -->
-                         </form>
+                         <!-- </form>
                          
                 </div>
                 <div class="col-6">
@@ -51,14 +197,14 @@
                     <div class="col-6">
                         <label>Class Delivery</label>
                         <form>
-                             <app-dropdown [items]="[]"></app-dropdown>
+                             <app-dropdown [items]="[]"></app-dropdown> -->
                                   <!-- <option value="option1">Online</option>
                                   <option value="option2">Offline</option>
                                   <option value="option3">Hybrid</option>
                                 </select> -->
                               
                               
-                            </form>
+                            <!-- </form>
                     </div>
                     <div class="col-6">
                         <label style="padding-left: 100px;">Instructor Cost</label>
@@ -81,13 +227,13 @@
                         <div class="row">
                             <div class="col-4">
                                 <form>
-                                    <app-dropdown [items]="[]"></app-dropdown>
+                                    <app-dropdown [items]="[]"></app-dropdown> -->
 <!--                                         
                                          <option  value="option1">Active</option>
                                          <option value="option2">Inactive</option>
                                          
                                        </select> -->
-                                   </form>
+                                   <!-- </form>
                             </div>
                             <div class="col-4">
                                 <h6>Is Guaranteed To Run</h6>
@@ -106,4 +252,4 @@
         </form>
         
     </div>
-</section>
+</section> -->
