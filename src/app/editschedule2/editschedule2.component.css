@@ -95,6 +95,7 @@
     border-top: solid 2px;
     border-color: rgba(214, 78, 73, 1);
     display: inline-block;
+    margin-left: 30px;
 }
 
 .topper .first p{
