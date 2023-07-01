@@ -13,7 +13,7 @@
             </button>
         </div>
     </div>
-    <div class="form-container">
+    <div class="form-container" *ngIf="!list">
         <div class="table">
             <div class="course-name">
                 <p>Course Name</p>
@@ -43,6 +43,39 @@
         <div class="bottom-buttons">
             <button id="back">Back</button>
             <button id="submit">Submit</button>
+        </div>
+    </div>
+    <div class="list-container" *ngIf="list">
+        <div class="header">
+            <div class="header-item" *ngFor="let item of headeritems">
+                <p>{{item}}</p>
+            </div>
+        </div>
+        <div class="item" *ngFor="let item of listitems">
+            <div class="course-name">
+                <p>{{item.coursename}}</p>
+            </div>
+            <div class="short-description">
+                <p>{{item.sd}}</p>
+            </div>
+            <div class="long-description">
+                <p>{{item.ld}}</p>
+            </div>
+            <div class="video-link">
+                <div class="vl-container">
+                    <p>{{item.vltitle}}</p>
+                    <img src="/assets/video-image.svg" alt="">
+                </div>
+            </div>
+            <div class="document-link">
+                <div class="dl-container">
+                    <p>{{item.dl}}</p>
+                    <img src="/assets/link.svg" alt="">
+                </div>
+            </div>
+            <div class="actions">
+                <img src="/assets/ellipses.svg" alt="ellipses">
+            </div>
         </div>
     </div>
     <div class="footer">

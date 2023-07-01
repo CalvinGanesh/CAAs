@@ -9,7 +9,11 @@ export class CoursekitComponent {
   @ViewChild("fileDropRef", { static: false })
   fileDropEl!: ElementRef;
   files: any[] = [];
-
+  list = true;
+  headeritems = ["Course Name", "Short Description", "Long Description",
+  "Video Link", "Document Link", "Actions"]
+  listitems = [{coursename: "Air Traffic Safety", sd: "Air Traffic Safety", ld: "Air Traffic Safety", vltitle: "Air Traffic", dl: "https://www.caas.gov.sg/"}];
+  
   /**
    * on file drop handler
    */

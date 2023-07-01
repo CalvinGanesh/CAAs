@@ -96,6 +96,47 @@ button {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.list-container {
+    width: 1091px;
+    height: 521px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: #FFF;
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+.list-container .header {
+    width: 1092px;
+    height: 83px;
+    flex-shrink: 0;
+    border-radius: 28px 28px 0px 0px;
+    background: #EBEBEB;    
+}
+
+.list-container .header p {
+    display: inline-flex;
+    width: 100px;
+    height: fit-content;
+    color: rgba(0, 0, 0, 0.68);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px; 
+}
+
+.list-container .header .header-item {
+    display: inline;
+    margin-left: 70px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(6, 180px);
+    margin-left: 50px;
+}
+
 .form-container {
     width: 1071px;
     height: 687px;
@@ -104,7 +145,7 @@ button {
     border: 1px solid #7E7E7E;
     background-color: #FFF;
     margin-left: 350px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .table {
