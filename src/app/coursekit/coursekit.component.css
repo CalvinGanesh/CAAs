@@ -110,7 +110,7 @@ button {
 .table {
     display: grid;
     grid-template-columns: repeat(2, 450px);
-    margin: 30px 80px;
+    margin: 30px 110px;
 }
 
 .table p {
@@ -133,7 +133,7 @@ button {
 }
 
 .course-name {
-    width: 407px;
+    width: 477px;
 }
 
 .document-link input {
@@ -185,7 +185,7 @@ button {
     background: #FFF;   
     font-family: 'Nunito';
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 120px;
 }
 
 #submit {
