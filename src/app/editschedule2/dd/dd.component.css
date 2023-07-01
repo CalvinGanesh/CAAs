@@ -1,0 +1,48 @@
+.container {
+    width: 150px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 0.3px solid #000000;
+}
+
+input {
+     display: none;
+}
+
+img {
+    float: right;
+    width: 20px;
+    height: 20px; 
+    margin-top: 2px;
+}
+
+.container p {
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 80%;
+}
+
+.dd {
+    width: 150px;
+    height: fit-content;
+    border-radius: 0px 0px 16px 16px;
+    border: 0.5px solid #526D82;
+    background: #FFF;
+    position: absolute;
+    z-index: 20;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dd p {
+    color: #252F40;
+    font-size: 12px;
+    font-family: 'Nunito';
+    padding: 5px 5px;
+    width: 355px;
+}
