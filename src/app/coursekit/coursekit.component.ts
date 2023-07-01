@@ -10,6 +10,7 @@ export class CoursekitComponent {
   fileDropEl!: ElementRef;
   files: any[] = [];
   list = true;
+  edit= true;
   headeritems = ["Course Name", "Short Description", "Long Description",
   "Video Link", "Document Link", "Actions"]
   listitems = [{coursename: "Air Traffic Safety", sd: "Air Traffic Safety", ld: "Air Traffic Safety", vltitle: "Air Traffic", dl: "https://www.caas.gov.sg/", selectopt: false},
@@ -18,6 +19,9 @@ export class CoursekitComponent {
 {coursename: "Safety Oversight", sd: "Safety Oversight Inspectors", ld: "Safety Oversight Inspectors", vltitle: "Safety", dl: "https://www.caas.gov.sg/", selectopt: false},
 {coursename: "Aviation Leaders Programme", sd: "Leadership Programme", ld: "Aviation Leaders Programme", vltitle: "Leadership", dl: "https://www.caas.gov.sg/", selectopt: false}];
   
+toggleEdit() {
+  this.edit = !this.edit;
+}
 
 selectoption(item: any) {
   item.selectopt = !item.selectopt;
