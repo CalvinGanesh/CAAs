@@ -22,6 +22,10 @@ export class CoursekitComponent {
 selectoption(item: any) {
   item.selectopt = !item.selectopt;
 }
+
+toggleList() {
+  this.list = !this.list;
+}
   /**
    * on file drop handler
    */

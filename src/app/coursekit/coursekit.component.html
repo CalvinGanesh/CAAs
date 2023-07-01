@@ -6,7 +6,8 @@
             <img src="/assets/header/magnifier.png" alt="">
         </div>
         <div class="buttons">
-            <button id="list-coursekit">List Course Kit</button>
+            <button id="list-coursekit" *ngIf="!list" (click)="toggleList()">List Course Kit</button>
+            <button id="list-coursekit" *ngIf="list" (click)="toggleList()">Add Course Kit</button>
             <button id="export">
                 <p>Export</p>
                 <img src="/assets/download-folder.svg" alt="">
