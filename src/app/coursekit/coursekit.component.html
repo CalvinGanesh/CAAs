@@ -15,36 +15,40 @@
         </div>
     </div>
     <div class="form-container" *ngIf="!list">
-        <div class="table">
-            <div class="course-name">
-                <p>Course Name</p>
-                <app-dropdown></app-dropdown>
-            </div>
-            <div class="document-link">
-                <p>Document Link</p>
-                <input type="text" placeholder="www">
-            </div>
-            <div class="short-description">
-                <p>Short Description</p>
-                <input type="text">
-            </div>
-            <div class="long-description">
-                <p>Long Description</p>
-                <input type="text">
-            </div>
-            <div class="video">
-                <p>Video</p>
-                <div class="box" appDnd (fileDropped)="onFileDropped($event)">
-                    <input type="file" #fileDropRef id="fileDropRef" (change)="fileBrowseHandler($event.target)">
-                    <h3>Drag & Drop Image, or <label for="fileDropRef" style="background: none; color: #D64E49;">Browse</label></h3>
-                    <p>Max 6 MB each, 12 MB for Videos</p>
+        <form (ngSubmit)="onSubmit()" #coursekitForm="ngForm">
+            <div class="table">
+                <div class="course-name">
+                    <p>Course Name</p>
+                    <app-dropdown [items]="['Aviation Management']" (selection)="addCourseName($event)"></app-dropdown>
+                </div>
+                <div class="document-link">
+                    <p>Document Link</p>
+                    <input type="text" placeholder="www" [(ngModel)]="model.dl" name="dl"
+                    #dl="ngModel">
+                </div>
+                <div class="short-description">
+                    <p>Short Description</p>
+                    <input type="text" [(ngModel)]="model.sd" name="sd" #sd="ngModel">
+                </div>
+                <div class="long-description">
+                    <p>Long Description</p>
+                    <input type="text" [(ngModel)]="model.ld" name="ld" #ld="ngModel">
+                </div>
+                <div class="video">
+                    <p>Video</p>
+                    <div class="box" appDnd (fileDropped)="onFileDropped($event)">
+                        <input type="file" #fileDropRef id="fileDropRef" (change)="fileBrowseHandler($event.target)">
+                        <h3>Drag & Drop Image, or <label for="fileDropRef" style="background: none; color: #D64E49;">Browse</label></h3>
+                        <p>Max 6 MB each, 12 MB for Videos</p>
+                    </div>
+                    <p *ngIf="model.vltitle != ''" style="font-size: 11px; position: absolute;">Uploaded: {{model.vltitle}}</p>
                 </div>
             </div>
-        </div>
-        <div class="bottom-buttons">
-            <button id="back">Back</button>
-            <button id="submit">Submit</button>
-        </div>
+            <div class="bottom-buttons">
+                <button id="back">Back</button>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
     </div>
     <div class="list-container" *ngIf="list" [ngStyle]="{'opacity':edit? '50%' :'100%'}">
         <div class="header">
@@ -77,7 +81,7 @@
                 </div>
                 <div class="option">
                     <div class="dropdown" *ngIf="item.selectopt">
-                        <div class="tab" (click)="toggleEdit()">
+                        <div class="tab" (click)="toggleEdit(item)">
                             <img src="/assets/pencil.svg" alt="pencil">
                             <p>Edit</p>
                         </div>
@@ -96,41 +100,44 @@
     <div class="edit-course-kit" *ngIf="edit">
         <div class="topper">
             <h3>Edit Course Kit</h3>
-            <h3 id="close" (click)="toggleEdit()">&Cross;</h3>
+            <h3 id="close" (click)="toggleEdit(model)">&Cross;</h3>
         </div>
-        <div class="edit-table">
-            <div class="course-name">
-                <p>Course Name</p>
-                <app-dropdown></app-dropdown>
-            </div>
-            <div class="course-name">
-                <p>Course Name</p>
-                <app-dropdown></app-dropdown>
-            </div>
-            <div class="short-desc">
-                <p>Short Description</p>
-                <input type="text" id="short-desc">
-            </div>
-            <div class="long-desc">
-                <p>Long Description</p>
-                <input type="text" id="long-desc">
-            </div>
-            <div class="dl">
-                <p>Document Link</p>
-                <input type="text" placeholder="www" id="document-link">
-            </div>
-            <div class="video">
-                <p>Video</p>
-                <div class="box">
-                    <h4>Drag & Drop Video, or <mark>Browse</mark></h4>
-                    <p>Max 6 Mb each, 12 MB for Videos</p>
+        <form (ngSubmit)="onEdit()" #coursekitEditForm="ngForm">
+            <div class="edit-table">
+                <div class="course-name">
+                    <p>Course Name</p>
+                    <app-dropdown [items]="['Aviation Safety']" (selection)="addCourseName($event)"></app-dropdown>
+                </div>
+                <div class="course-name">
+                    <p>Course Name</p>
+                    <app-dropdown></app-dropdown>
+                </div>
+                <div class="short-desc">
+                    <p >Short Description</p>
+                    <input type="text" id="short-desc" [(ngModel)]="model.sd" name="sd" #sd="ngModel">
+                </div>
+                <div class="long-desc">
+                    <p>Long Description</p>
+                    <input type="text" id="long-desc" [(ngModel)]="model.ld" name="ld" #ld="ngModel">
+                </div>
+                <div class="dl">
+                    <p>Document Link</p>
+                    <input type="text" placeholder="www" id="document-link" [(ngModel)]="model.dl" name="dl" #dl="ngModel">
+                </div>
+                <div class="video">
+                    <p>Video</p>
+                    <div class="box" appDnd (fileDropped)="onFileDropped($event)">
+                        <input type="file" #fileDropRef id="fileDropRef" (change)="fileBrowseHandler($event.target)">
+                        <h4>Drag & Drop Video, or <label for="fileDropRef" style="background: none; color: #D64E49;">Browse</label></h4>
+                        <p>Max 6 Mb each, 12 MB for Videos</p>
+                    </div>
+                </div>
+                <div class="edit-buttons">
+                    <button id="cancel">Cancel</button>
+                    <button id="sub">Submit</button>
                 </div>
             </div>
-            <div class="edit-buttons">
-                <button id="cancel">Cancel</button>
-                <button id="sub">Submit</button>
-            </div>
-        </div>
+        </form>
     </div>
     <div class="footer">
         <p style="font-weight: bold;">&copy;  2023 CAAS Training Institute. All Rights Reserved</p>
