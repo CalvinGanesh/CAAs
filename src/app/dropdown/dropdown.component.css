@@ -3,11 +3,11 @@
     height: 47px;
     flex-shrink: 0;
     border-radius: 12px;
-    border: 0.3px solid #7A7A7A;
+    border: 0.3px solid #000000;
 }
 
 input {
-    display: none;
+     display: none;
 }
 
 img {
@@ -18,7 +18,7 @@ img {
 
 .container p {
     display: inline-block;
-    color: #7A7A7A;
+    color: #000000;
     margin-top: 13px;
     margin-left: 10px;
     font-size: 16px;
@@ -33,6 +33,11 @@ img {
     background: #FFF;
     position: absolute;
     z-index: 20;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 500;
+    
+
 }
 
 .dd p {
