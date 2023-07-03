@@ -114,6 +114,10 @@
     flex-shrink: 0;
 }
 
+.course-name, .skill-connect-code {
+    width: 420px;
+}
+
 .course-code input {
     width: 329px;
     height: 47px;

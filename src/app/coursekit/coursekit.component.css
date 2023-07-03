@@ -1,0 +1,489 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F8F8F8;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 1189px;
+    display: block;
+    z-index: -10;
+    align-items: center;
+    font-family: 'Nunito';
+}
+
+.top {
+    margin-top: 150px;
+    margin-left: 370px;
+}
+
+.top h1, .top div {
+    display: inline;
+}
+
+.top h1 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.top .search-bar {
+    width: 295px;
+    height: 37px;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 176px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 0.3px solid #D8D7D7;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    margin-left: 100px;   
+}
+
+.top .search-bar input {
+    color: #B4B3B3;
+    font-size: 18px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+}
+
+.top .search-bar img {
+    position: relative;
+    top: 5px;
+}
+
+button {
+    font-family: 'Nunito';
+}
+
+.top .buttons {
+    margin-left: 150px;
+}
+
+.top .buttons #list-coursekit {
+    display: inline;
+    width: 157.689px;
+    height: 41px;
+    padding: 8px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0; 
+    border-radius: 9px;
+    border: 1px solid #D64E49;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    font-size: 16px;  
+}
+
+.top .buttons #export {
+    margin-left: 30px;
+    display: inline-flex;
+    width: 157.689px;
+    height: 41px;
+    padding: 8px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #FFAE3B;
+    color: #FFF;
+    font-size: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.list-container {
+    width: 1091px;
+    height: 521px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: #FFF;
+    margin-top: 30px;
+    margin-left: 320px;
+}
+
+.list-container .header {
+    width: 1042px;
+    height: 83px;
+    flex-shrink: 0;
+    border-radius: 28px 28px 0px 0px;
+    background: #EBEBEB;
+    padding-left: 50px; 
+}
+
+.list-container .header p {
+    display: inline-flex;
+    width: 100px;
+    height: fit-content;
+    color: rgba(0, 0, 0, 0.68);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 30px; 
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 180px 160px 200px 200px 200px 20px;
+}
+
+.list-container .header .header-item {
+    display: inline;
+}
+
+.items-box {
+    overflow-y: scroll;
+    height: 420px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 180px 160px 160px 150px 200px 20px;
+    padding-left: 50px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.10);
+    height: 60px;
+}
+
+.item p {
+    color: #252F40;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    width: 120px;
+}
+
+.video-link .vl-container, .dl-container{
+    width: 184px;
+    height: 33px;
+    flex-shrink: 0; 
+    border-radius: 12px;
+    border: 0.3px solid #7A7A7A;
+    background: #FFF;
+    margin-top: 5px;
+}
+
+.vl-container p {
+    display: inline;
+    color: black;
+    font-size: 11px;
+    float: left;
+    margin: 9px 15px;
+}
+
+.vl-container img {
+    display: inline;
+    float: right;
+    margin: 5px;
+}
+
+.dl-container a {
+    display: inline;
+    color: #00326C;
+    font-size: 10px;  
+    float: left;
+    margin: 10px;  
+}
+
+.dl-container img {
+    display: inline;
+    float: right;
+    margin: 7px;
+}
+
+.dl-container {
+    margin-left: 70px;
+}
+
+.actions {
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    border-radius: 23px;
+    background: #EFEEEE;
+}
+
+.actions img {
+    margin: 2px;
+}
+
+.dropdown {
+    width: 129px;
+    height: 68px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    border: 0.5px solid #7E7E7E;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.tab {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+.tab:hover {
+    background-color: #D64E49;
+    color: #FFF;
+}
+
+.tab:hover img {
+    filter: invert(100%);
+}
+
+.tab:hover p {
+    color: #FFF;
+}
+
+.tab p, .tab img {
+    display: inline;
+    margin-left: 7px;
+} 
+
+.form-container {
+    width: 1071px;
+    height: 687px;
+    flex-shrink: 0;
+    border-radius: 38px;
+    border: 1px solid #7E7E7E;
+    background-color: #FFF;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    margin: 30px 110px;
+}
+
+.table p {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.table input {
+    width: 397px;
+    height: 108px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 0.3px solid #7A7A7A;
+    background: #FFF;  
+    font-family: 'Nunito';  
+    padding-left: 10px;
+}
+
+.course-name {
+    width: 397px;
+}
+
+.document-link input {
+    width: 397px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 0.3px solid #7A7A7A;
+    background: #FFF;
+}
+
+.box {
+    width: 852px;
+    height: 194px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1.5px dashed #7A7A7A;
+    background: #FFF;
+    text-align: center;
+}
+
+.box h3 {
+    color: #252F40;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.box p {
+    color: #252F40;
+    font-size: 12px;
+}
+
+.box input {
+    display: none;
+}
+
+.bottom-buttons button {
+    display: flex;
+    width: 114px;
+    height: 37px;
+    padding: 0px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #526D82;
+    background: #FFF;   
+    font-family: 'Nunito';
+    display: inline-block;
+    margin-left: 120px;
+}
+
+#submit {
+    margin-left: 625px;
+    background: #526D82;
+    color: #FFF;
+}
+
+.edit-course-kit {
+    width: 889px;
+    height: 605px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    border: 1px solid #7E7E7E;
+    background: #FFF;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    z-index: 40;
+    overflow: hidden; 
+}
+
+.topper {
+    display: block;
+    width: 100%;
+}
+
+.topper h3 {
+    display: inline;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    float: left;
+    font-size: 24px;
+}
+
+#close {
+    float: right;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.edit-table {
+    display: block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 60px;
+    margin-left: 50px;
+}
+
+.edit-table p {
+    font-size: 20px;
+}
+
+.edit-table .course-name {
+    width: 380px;
+}
+
+.edit-table input {
+    font-family: 'Nunito';
+    padding-left: 20px;
+}
+
+.edit-table .short-desc input, .edit-table .long-desc input {
+    width: 360px;
+    height: 87px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 0.3px solid #7A7A7A;
+    background: #FFF;
+}
+
+.edit-table .dl input {
+    width: 360px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 0.3px solid #7A7A7A;
+    background: #FFF;
+}
+
+.edit-table .video .box {
+    width: 385px;
+    height: 84px;
+    flex-shrink: 0; 
+    border-radius: 16px;
+    border: 1.5px dashed #7A7A7A;
+    background: #FFF;   
+}
+
+.edit-table .video .box p {
+    color: #252F40;
+    font-size: 10px;
+}
+
+.edit-table .video .box h4 {
+    color: #252F40;
+    font-size: 14px;
+}
+
+.edit-table .video .box mark {
+    background: none;
+    color: #D64E49;
+}
+
+.edit-table button {
+    display: inline-block;
+    width: 114px;
+    height: 37px;
+    padding: 0px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #526D82;
+    background: #FFF;
+}
+
+.edit-buttons {
+    height: 40px;
+    width: 800px;
+    margin-top: 10px;
+}
+
+#sub {
+    float: right;
+    background-color: #526D82;
+    color: #FFF;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    text-indent: 50px;
+    margin: 50px;
+    border-top: black solid;
+}

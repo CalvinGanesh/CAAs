@@ -15,6 +15,9 @@ import { Editschedule2Component } from './editschedule2/editschedule2.component'
 import { ScheduleComponent } from './schedule/schedule.component';
 import { DndDirective } from './dnd.directive';
 import { MultiSelectDropdownComponent } from './multi-select-dropdown/multi-select-dropdown.component';
+import { DdComponent } from './editschedule2/dd/dd.component';
+import { CoursekitComponent } from './coursekit/coursekit.component';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -31,11 +34,14 @@ import { AppRoutingModule } from './app-routing.module';
     Editschedule2Component,
     ScheduleComponent,
     DndDirective,
-    MultiSelectDropdownComponent
+    MultiSelectDropdownComponent,
+    DdComponent,
+    CoursekitComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule
     AppRoutingModule
   ],
   providers: [],

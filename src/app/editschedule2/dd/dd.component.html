@@ -1,6 +1,6 @@
 <input style="visibility: hidden" placeholder="{{selected}}">
 <div class="container" (click)="press()">
-    <p *ngIf="selected.length != 0">{{selected}}</p>
+    <p>{{selected}}</p>
     <img [ngStyle]="{'transform' :pressed ? 'scaleY(-1)' : 'none'}" src="/assets/drop-down.svg" alt="drop-down">
 </div>
 <div class="dd" *ngIf="pressed">
