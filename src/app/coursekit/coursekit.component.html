@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="items-box">
-            <div class="item" *ngFor="let item of listitems">
+            <div class="item" *ngFor="let item of listitems; index as index">
                 <div class="course-name">
                     <p>{{item.coursename}}</p>
                 </div>
@@ -88,7 +88,7 @@
                             <img src="/assets/pencil.svg" alt="pencil">
                             <p>Edit</p>
                         </div>
-                        <div class="tab">
+                        <div class="tab" (click)="deleteItem(index)">
                             <img src="/assets/delete.svg" alt="delete">
                             <p>Delete</p>
                         </div>
