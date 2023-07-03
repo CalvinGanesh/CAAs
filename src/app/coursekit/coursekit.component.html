@@ -80,6 +80,9 @@
                     </div>
                 </div>
                 <div class="option">
+                    <div class="actions" (click)="selectoption(item)" [ngStyle]="{'background':item.selectopt? '#D64E49' : '#EFEEEE'}">
+                        <img src="/assets/ellipses.svg" alt="ellipses" [ngStyle]="{'filter':item.selectopt? 'invert(100%)' : 'none'}">
+                    </div>
                     <div class="dropdown" *ngIf="item.selectopt">
                         <div class="tab" (click)="toggleEdit(item)">
                             <img src="/assets/pencil.svg" alt="pencil">
@@ -89,9 +92,6 @@
                             <img src="/assets/delete.svg" alt="delete">
                             <p>Delete</p>
                         </div>
-                    </div>
-                    <div class="actions" (click)="selectoption(item)" [ngStyle]="{'background':item.selectopt? '#D64E49' : '#EFEEEE'}">
-                        <img src="/assets/ellipses.svg" alt="ellipses" [ngStyle]="{'filter':item.selectopt? 'invert(100%)' : 'none'}">
                     </div>
                 </div>
             </div>

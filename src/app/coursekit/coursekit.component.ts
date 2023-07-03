@@ -60,13 +60,13 @@ toggleList() {
   }
 
   onSubmit() {
-    console.log(this.model);
+    console.log(this.listitems);
     this.listitems.push(this.model);
     this.toggleList();
+    this.model = {coursename: "", sd: "", ld: "", dl: "", vltitle: "", selectopt: false};
   }
 
   onEdit() {
-    console.log(this.model);
     this.toggleEdit(this.model);
   }
 
