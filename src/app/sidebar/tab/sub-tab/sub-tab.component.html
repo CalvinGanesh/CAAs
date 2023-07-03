@@ -2,5 +2,5 @@
     <div class="course-icon">
         <img class="icon" src={{tab.iconsrc}} alt="home-icon">
     </div>
-    <h1>{{sub.title}}</h1>
+    <h1><a style="text-decoration: none; color: black;" [routerLink]="tab.title + '/' + sub.title">{{sub.title}}</a></h1>
 </div>
