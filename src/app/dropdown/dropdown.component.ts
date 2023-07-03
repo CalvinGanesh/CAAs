@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown',
@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DropdownComponent implements OnInit {
   @Input() items : any;
+  @Output() selection = new EventEmitter();
   pressed = false;
   selected: string = "";
   
@@ -29,5 +30,6 @@ export class DropdownComponent implements OnInit {
     document.getElementById(id)?.style.setProperty('background', 'rgba(82, 109, 130, 1)');
     document.getElementById(id)?.style.setProperty('color', 'white');
     this.pressed = !this.pressed;
+    this.selection.emit(id);
   }
 }

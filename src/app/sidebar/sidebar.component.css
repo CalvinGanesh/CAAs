@@ -7,6 +7,10 @@
     overflow-y: auto;
 }
 
+.bigger-container::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     position: static;
     width: 263px;
