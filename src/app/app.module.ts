@@ -18,6 +18,7 @@ import { MultiSelectDropdownComponent } from './multi-select-dropdown/multi-sele
 import { DdComponent } from './editschedule2/dd/dd.component';
 import { CoursekitComponent } from './coursekit/coursekit.component';
 import { FormsModule } from '@angular/forms';
+import { CourseApprovalComponent } from './course-approval/course-approval.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     DndDirective,
     MultiSelectDropdownComponent,
     DdComponent,
-    CoursekitComponent
+    CoursekitComponent,
+    CourseApprovalComponent
   ],
   imports: [
     BrowserModule,
