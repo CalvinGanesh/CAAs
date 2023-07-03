@@ -20,6 +20,7 @@ import { CoursekitComponent } from './coursekit/coursekit.component';
 import { FormsModule } from '@angular/forms';
 import { CourseApprovalComponent } from './course-approval/course-approval.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CourseCategoriesComponent } from './course-categories/course-categories.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AppRoutingModule } from './app-routing.module';
     MultiSelectDropdownComponent,
     DdComponent,
     CoursekitComponent,
-    CourseApprovalComponent
+    CourseApprovalComponent,
+    CourseCategoriesComponent
   ],
   imports: [
     BrowserModule,
