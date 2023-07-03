@@ -38,10 +38,6 @@
     font-family: 'Nunito';
     font-weight: 500;
   
-.col {
-    position: relative;
-    left: 484px;
-    top: -30px;
 }
 
 .form-container {
@@ -120,24 +116,8 @@
 .topper .second p {
     color: #FFF;
     font-size: 22px;
-  
-.col-8 h5{
-    position: absolute;
-    margin-top: 46px;
-    margin-left: 81px;
-   
 }
-.col-4 button{
-    border: 1px solid #000000;
-    background-color: #ffffff;
-    border-radius: 9px;
-    border-color: #526D82;
-    width: 160px;
-    height: 40px;
-    margin-top: 40px;
-    margin-left: 900px;
-    
-}
+
 .dropdown{
     margin-left: 20px;
     margin-top: -30px;
@@ -248,14 +228,6 @@ input{
     flex-shrink: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
-.item input{
-    width: 200px;
-    height: 28px;
-    flex-shrink: 0;
-    border-radius: 6px;
-    border: 0.3px solid #000;
-    background: #FFF;
 }
 
 .item div {
