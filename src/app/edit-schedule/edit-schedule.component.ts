@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Subscription } from 'rxjs/internal/Subscription';
 
@@ -9,11 +9,21 @@ import { Subscription } from 'rxjs/internal/Subscription';
   styleUrls: ['./edit-schedule.component.css']
 })
 export class EditScheduleComponent {
+  @Output() goBack = new EventEmitter();
+  @Output() goNext = new EventEmitter();
 
  cnitems=["Aviation Security Programmee in Public Policy","Air Traffic Safety Electronics Personnel Basic",
  "ICAO PANS-OPS Instrument","Senior Airport Fire Officers","Aeronautical Search and Rescue Operations"];
  cditems=["Online","Offline","Hybrid"];
  sitems=["Active","Inactive"]
+
+ back() {
+  this.goBack.emit();
+ }
+
+ next() {
+  this.goNext.emit();
+ }
 
   // selectedOption1: string | undefined;
   // selectedOption2: string | undefined;

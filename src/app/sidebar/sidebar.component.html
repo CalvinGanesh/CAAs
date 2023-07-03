@@ -11,7 +11,7 @@
         </div>
         <p id="title">Main Menu</p>
         <div class="tabs">
-            <app-tab 
+            <app-tab (selection)="clearSubTabStyling()"
             *ngFor="let tab of tabs; index as index" 
             [tab]="tab"
             [index]="index"></app-tab>

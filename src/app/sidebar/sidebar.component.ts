@@ -25,7 +25,7 @@ export class SidebarComponent {
 {title: "Fellowship", iconsrc:"/assets/fellowship-icon.svg", selected: false, subs: []}, {title: "Survey", iconsrc:"/assets/survey-icon.svg", selected: false, subs: [{title: "List", type:"none"}]},
 {title: "Audit", selected: false, iconsrc: "/assets/audit-icon.svg", subs: [{title: "List", type:"none"}, {title: "E-Attendance", type:"none"}]}, {title: "Home Content", iconsrc: "/assets/home-content-icon.svg", selected: false, subs: []},
 {title: "Users", selected: false, iconsrc: "/assets/users-icon.svg", subs: [{title: "Type", type: "none"}, {title: "All User", type: "none"}]},
-{title: "Survey Builder", selected: false, iconsrc: "/assets/survey-builder-icon.svg", src: [{title: "Surveys", type: "none"}, {title: "Add", type: "none"}]},
+{title: "Survey Builder", selected: false, iconsrc: "/assets/survey-builder-icon.svg", subs: [{title: "Surveys", type: "none"}, {title: "Add", type: "none"}]},
 {title: "Certificate Builder", selected: false, iconsrc: "/assets/certificate-icon.svg", subs: [{title: "Certificates", type: "none"}, {title: "Add", type: "none"}]},
 {title: "Email Configuration", selected: false, iconsrc:"/assets/email-icon.svg", subs: []},
 {title: "Banners", selected: false, iconsrc: "/assets/banner-icon.svg", subs: []},
@@ -47,4 +47,11 @@ export class SidebarComponent {
   this.collapsed = false;
  }
 
+ clearSubTabStyling() {
+  for(const tab of this.tabs) {
+    for(const sub of tab.subs) {
+      sub.type = "none";
+    }
+  }
+ }
 }
