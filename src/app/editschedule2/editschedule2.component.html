@@ -21,7 +21,7 @@
         </div>
         <div class="table-title">
             <h1>Assign Instructor & Lab Schedule</h1>
-            <button id="add" (click)="addItem()">
+            <button id="add" (click)="addItem()" style="position: relative; left: 30px;">
                 <img src="/assets/Close.svg" alt="plus">
                 <p>Add</p>
             </button>
@@ -42,10 +42,10 @@
                     <div class="instructor">
                         <app-dd [items]="['Timothy']"></app-dd>
                     </div>
-                    <div class="Lab">
+                    <div class="Lab" style="position: relative; left: 50px;">
                         <app-dd [items]="[]"></app-dd>
                     </div>
-                    <div class="delete" (click)="deleteItem(i)">
+                    <div class="delete" (click)="deleteItem(i)" style="position: relative; left: 45px">
                         <img src="/assets/delete.svg" alt="delete">
                     </div>
                 </div>

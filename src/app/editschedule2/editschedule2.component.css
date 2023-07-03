@@ -180,11 +180,17 @@ input{
 
 #add p {
     position: relative;
-    top: -10px;
+    top: -12px;
+    font-size: 18px;
+}
+
+#add img {
+    position: relative;
+    left: -5px;
 }
 
 .table {
-    width: 959px;
+    width: 980px;
     height: 222px;
     flex-shrink: 0;
     border-radius: 17px;
@@ -199,7 +205,9 @@ input{
 
 .table .header {
     padding: 15px 0px;
-    width: 959px;
+    display: grid;
+    grid-template-columns: 220px 240px 250px 200px;
+    width: 980px;
     height: 34px;
     flex-shrink: 0;
     border-radius: 17px 17px 0px 0px;
@@ -209,7 +217,7 @@ input{
 
 .table .header p {
     display: inline;
-    margin-left: 120px;
+    margin-left: 100px;
     width: fit-content;
     flex-direction: column;
     flex-shrink: 0;
@@ -218,8 +226,8 @@ input{
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
-    position: relative;
-    left: -120px;     
+    position: relative; 
+    top: -8px;   
 }
 
 .item {
@@ -230,12 +238,23 @@ input{
     grid-template-columns: repeat(5, 1fr);
 }
 
+
+.item input{
+    width: 200px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 0.3px solid #000;
+    background: #FFF;
+}
+
 .item div {
     margin-top: 30px;
     margin-left: 20px;
 }
 
 .instructor {
+    padding-left: 5px;
     width: 150px;
 }
 
@@ -255,9 +274,11 @@ input{
 input {
     border-radius: 12px;
     padding-left: 10px;
+    padding-right: 5px;
     border: 0.3px solid #7A7A7A;
     width: fit-content;
     font-family: 'Nunito';
+    font-size: 17px;
 }
 
 .buttons {
@@ -285,17 +306,17 @@ button {
 
 #back {
     position: relative;
-    top: 40px;
+    top: 43px;
 }
 
 #cancel {
-    margin-left: 465px;
+    margin-left: 505px;
     position: relative;
     top: 45px;
 }
 
 #submit {
-    margin-left: 740px;
+    margin-left: 790px;
     background: #526D82;
     color: #FFF;
     position: relative;
