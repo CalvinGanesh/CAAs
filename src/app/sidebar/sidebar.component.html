@@ -27,7 +27,7 @@
     </div>
     <div class="tabs">
         <div class="red-icon" *ngFor="let tab of tabs">
-            <img class="icon" src={{tab.iconsrc}} alt="home-icon">
+            <a [routerLink]="tab.title"><img class="icon" src={{tab.iconsrc}} alt="home-icon"></a>
         </div>
     </div>
 </div>
