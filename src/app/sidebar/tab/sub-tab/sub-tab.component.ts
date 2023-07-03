@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sub-tab',
@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sub-tab.component.css']
 })
 export class SubTabComponent {
+  @Output() navigate = new EventEmitter();
   @Input() sub: any;
   @Input() tab: any;
 
@@ -13,6 +14,7 @@ export class SubTabComponent {
     for(let s of this.tab.subs) {
       s.type = "none";
     }
+    this.navigate.emit();
     this.sub.type = "selected";
   }
 }

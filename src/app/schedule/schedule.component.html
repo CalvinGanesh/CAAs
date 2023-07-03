@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="!edit">
     <div class="top">
         <div class="title">
             <h1>Schedule Class Listing:</h1>
@@ -41,7 +41,7 @@
             </div>
             <div class="option">
                 <div class="dropdown" *ngIf="item.optselected">
-                    <div class="tab">
+                    <div class="tab" (click)="toggleEdit()">
                         <img src="/assets/pencil.svg" alt="pencil">
                         <p>Edit</p>
                     </div>
@@ -60,4 +60,8 @@
             </div>
         </div>
     </div>
+</div>
+<div *ngIf="edit">
+    <app-edit-schedule *ngIf="partone" (goBack)="toggleEdit()" (goNext)="togglePart()"></app-edit-schedule>
+    <app-editschedule2 *ngIf="!partone" (goBack)="togglePart()" (goNext)="toggleEdit()"></app-editschedule2>
 </div>

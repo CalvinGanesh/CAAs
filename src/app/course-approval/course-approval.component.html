@@ -1,1 +1,48 @@
-<p>course-approval works!</p>
+<div class="container">
+    <div class="top">
+        <h1>Course Approval</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <img src="/assets/header/magnifier.png" alt="">
+        </div>
+        <div class="buttons">
+            <button id="export">
+                <p>Export</p>
+                <img src="/assets/download-folder.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="list-container">
+        <div class="header">
+            <div class="header-item" *ngFor="let item of headeritems">
+                <p>{{item}}</p>
+            </div>
+        </div>
+        <div class="items-box">
+            <div class="item" *ngFor="let item of items">
+                <div class="course-name">
+                    <p>{{item.coursename}}</p>
+                </div>
+                <div class="short-description">
+                    <p>{{item.coursecode}}</p>
+                </div>
+                <div class="long-description">
+                    <p>{{item.mc}}</p>
+                </div>
+                <div class="long-description">
+                    <p>{{item.sc}}</p>
+                </div>
+                <div class="long-description">
+                    <p>{{item.fee}}</p>
+                </div>
+                <div class="option">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p style="font-weight: bold;">&copy;  2023 CAAS Training Institute. All Rights Reserved</p>
+        <p>Terms of Service Private Policy</p>
+    </div>
+</div>

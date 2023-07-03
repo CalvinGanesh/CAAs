@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
@@ -9,6 +9,9 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./editschedule2.component.css']
 })
 export class Editschedule2Component {
+  @Output() goBack = new EventEmitter();
+  @Output() goNext = new EventEmitter();
+
   headeritems = ['Start Date', 'End Date', 'Instructor', 'Lab']
   items = ['', '']
   index = 0;
@@ -20,5 +23,13 @@ export class Editschedule2Component {
 
   addItem() {
     this.items.push('');
+  }
+
+  back() {
+    this.goBack.emit();
+  }
+
+  next() {
+    this.goNext.emit();
   }
 }
