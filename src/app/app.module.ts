@@ -19,6 +19,7 @@ import { DdComponent } from './editschedule2/dd/dd.component';
 import { CoursekitComponent } from './coursekit/coursekit.component';
 import { FormsModule } from '@angular/forms';
 import { CourseApprovalComponent } from './course-approval/course-approval.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CourseApprovalComponent } from './course-approval/course-approval.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

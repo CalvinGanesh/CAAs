@@ -37,6 +37,7 @@
     font-size: 24px;
     font-family: 'Nunito';
     font-weight: 500;
+  
 }
 
 .form-container {
@@ -68,6 +69,14 @@
     border: 0.3px solid #D64E49;
     background: #D64E49;
     margin-left: 30px;
+    left: 531px;
+    top: -104px;
+}
+
+.col-2 {
+    position: relative;
+    left: 656px;
+    top: -127px;
 }
 
 .topper .first {
@@ -107,6 +116,43 @@
 .topper .second p {
     color: #FFF;
     font-size: 22px;
+}
+
+.dropdown{
+    margin-left: 20px;
+    margin-top: -30px;
+    text-align: left;
+    padding-left: 20px;
+    width: 160px;
+    height: 38px;
+    border: 0.3px solid #000000;
+    border-radius: 6px;
+    background-color: #ffffff;
+    background: url("/assets/down arrow.svg")90% / 10% no-repeat white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: Open sans;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input{
+    margin-left: 20px;
+    margin-top: -20px;
+    padding-top: 0px;
+    padding-left: 16px;
+    width: 176px;
+    height: 38px;
+    border: 0.3px solid #000000;
+    border-radius: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: Open Sans;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .topper .first p, .topper .second p {
@@ -191,6 +237,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+
 
 .item input{
     width: 200px;
