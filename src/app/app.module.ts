@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { CourseApprovalComponent } from './course-approval/course-approval.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CourseCategoriesComponent } from './course-categories/course-categories.component';
+import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CourseCategoriesComponent } from './course-categories/course-categories
     DdComponent,
     CoursekitComponent,
     CourseApprovalComponent,
-    CourseCategoriesComponent
+    CourseCategoriesComponent,
+    CreateScheduleComponent
   ],
   imports: [
     BrowserModule,

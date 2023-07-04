@@ -190,7 +190,7 @@ input{
 }
 
 .table {
-    width: 980px;
+    width: 1000px;
     height: 222px;
     flex-shrink: 0;
     border-radius: 17px;
@@ -207,7 +207,7 @@ input{
     padding: 15px 0px;
     display: grid;
     grid-template-columns: 220px 240px 250px 200px;
-    width: 980px;
+    width: 1000px;
     height: 34px;
     flex-shrink: 0;
     border-radius: 17px 17px 0px 0px;
@@ -264,7 +264,9 @@ input{
     flex-shrink: 0;
     border-radius: 31px;
     border: 0.3px solid #7E7E7E;
-    background: #E8E8E8;        
+    background: #E8E8E8;   
+    position: relative;
+    left: -10px;     
 }
 
 .delete img {

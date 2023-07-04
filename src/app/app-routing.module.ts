@@ -7,10 +7,12 @@ import { CoursekitComponent } from './coursekit/coursekit.component';
 import { EditScheduleComponent } from './edit-schedule/edit-schedule.component';
 import { Editschedule2Component } from './editschedule2/editschedule2.component';
 import { CourseCategoriesComponent } from './course-categories/course-categories.component';
+import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
 
 const routes: Routes = [
   {path: '', component: ScheduleComponent},
   {path: 'Schedule Class', component: ScheduleComponent},
+  {path: 'Schedule Class/Add', component: CreateScheduleComponent},
   {path: 'Schedule Class/List', component: ScheduleComponent},
   {path: 'Schedule Class/Edit/1', component: EditScheduleComponent},
   {path: 'Schedule Class/Edit/2', component: Editschedule2Component},
