@@ -1,0 +1,149 @@
+<div class="container-1" *ngIf="pageone">
+    <div class="form-container">
+        <div class="top">
+            <div class="head">
+                <h4>Schedule Class Create</h4>
+            </div>
+            <div class="marker" style="position: relative; left: 30px;">
+                <div class="first">
+                    <p>1</p>
+                </div>
+                <p style="position: relative; left: 25px;">Course</p>
+            </div>
+            <div class="hr">
+            </div>
+            <div class="marker">
+                <div class="second">
+                    <p>2</p>
+                </div>
+                <p>Instructor & Lab</p>   
+            </div>
+        </div>
+        <form action="">
+            <div class="table">
+                <div class="course-name">
+                    <p>Course Name</p>
+                    <app-dropdown [items]=""></app-dropdown>
+                </div>
+                <div class="course-type">
+                    <p>Class Type</p>
+                    <div class="selections">
+                        <div class="tick" (click)="toggleCheck(0)">
+                            <h1 *ngIf="pressed[0]" style="position: absolute; color:green; font-size: 20px; margin: 5px">&check;</h1>
+                        </div>
+                        <p style="font-size: 16px; margin-left: 5px;">Public</p>
+                        <div class="tick" style="margin-left: 20px;" (click)="toggleCheck(1)">
+                            <h1 *ngIf="pressed[1]" style="position: absolute; color:green; font-size: 20px; margin: 5px">&check;</h1>
+                        </div>
+                        <p style="font-size: 16px; margin-left: 5px;">Private</p>
+                    </div>
+                </div>
+                <div class="class-delivery">
+                    <p>Class Delivery</p>
+                    <app-dropdown [items]=""></app-dropdown>
+                </div>
+                <div class="instructor-cost">
+                    <p>Instructor Cost</p>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="min-enrollment">
+                    <p>Minimum Enrollment</p>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="max-enrollment">
+                    <p>Maximum Enrollment</p>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="status">
+                    <p>Status</p>
+                    <div class="selections">
+                        <div class="toggle">
+                            <div class="switch-1">
+                                <h1 *ngIf="!pressed[2] || !pressed[3]">&checkmark;</h1>
+                            </div>
+                            <div class="switch-2">
+                                <h1 *ngIf="pressed[2] && pressed[3]">&checkmark;</h1>
+                            </div>
+                        </div>
+                        <div class="tick" (click)="toggleCheck(2)">
+                            <h1 *ngIf="pressed[2]" style="position: absolute; color:green; font-size: 20px; margin: 5px">&check;</h1>
+                        </div>
+                        <p style="font-size: 16px; margin-left: 5px;">Is Guaranteed to Run</p>
+                        <div class="tick" style="margin-left: 70px;" (click)="toggleCheck(3)">
+                            <h1 *ngIf="pressed[3]" style="position: absolute; color:green; font-size: 20px; margin: 5px">&check;</h1>
+                        </div>
+                        <p style="font-size: 16px; margin-left: 5px;">External Room</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-1">
+                <button id="back-1" (click)="back()">Back</button>
+                <button id="next-1" (click)="next()"> Next</button>
+            </div>
+        </form>
+    </div>    
+</div>
+<div class="container" *ngIf="!pageone">
+    <div class="form-container">
+        <div class="title">
+            <h1 style="position: relative; left: 20px;">Schedule Class Create</h1>
+            <div class="topper" style="position: relative; top: 60px;">
+                <div class="marker">
+                    <div class="first">
+                        <p>1</p>
+                    </div>
+                    <p class="tag" style="position: relative; left: 27px;">Course</p>
+                </div>
+                <div class="hr" style="position: relative; top: -70px;">
+                </div>
+                <div class="marker">
+                    <div class="second">
+                        <p>2</p>
+                    </div>
+                    <p class="tag">Instructor & Lab</p>   
+                </div>
+            </div>
+        </div>
+        <div class="table-title">
+            <h1>Assign Instructor & Lab Schedule</h1>
+            <button id="add" (click)="addItem()" style="position: relative; left: 30px;">
+                <img src="/assets/Close.svg" alt="plus">
+                <p>Add</p>
+            </button>
+        </div>
+        <form>
+            <div class="table">
+                <div class="header">
+                    <p *ngFor="let h of headeritems;">{{h}}</p>
+                </div>
+                <div class="item" *ngFor="let item of items;index as i">
+                    <p style="display: none;">{{i+1}}</p>
+                    <div class="start-date">
+                        <input type="datetime-local" name="start-date" id="start-date">
+                    </div>
+                    <div class="end-date">
+                        <input type="datetime-local" name="end-date" id="end-date">
+                    </div>
+                    <div class="instructor">
+                        <app-dd [items]="[]"></app-dd>
+                    </div>
+                    <div class="Lab" style="position: relative; left: 50px;">
+                        <app-dd [items]="[]"></app-dd>
+                    </div>
+                    <div class="delete" (click)="deleteItem(i)" style="position: relative; left: 65px; top: -8px;">
+                        <img src="/assets/delete.svg" alt="delete">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="back" (click)="next()">Back</button>
+                <button id="cancel" (click)="next()">Cancel</button>
+                <button type="submit" id="submit" (click)="next()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p style="font-weight: bold;">&copy;  2023 CAAS Training Institute. All Rights Reserved</p>
+        <p>Terms of Service Private Policy</p>
+    </div>
+</div>
