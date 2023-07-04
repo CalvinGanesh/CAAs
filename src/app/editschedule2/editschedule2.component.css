@@ -235,7 +235,7 @@ input{
     height: 60.328px;
     flex-shrink: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 230px 250px 170px 200px 10px;
 }
 
 
@@ -264,9 +264,7 @@ input{
     flex-shrink: 0;
     border-radius: 31px;
     border: 0.3px solid #7E7E7E;
-    background: #E8E8E8;   
-    position: relative;
-    left: -10px;     
+    background: #E8E8E8;        
 }
 
 .delete img {

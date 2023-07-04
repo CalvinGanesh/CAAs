@@ -22,6 +22,8 @@ import { CourseApprovalComponent } from './course-approval/course-approval.compo
 import { AppRoutingModule } from './app-routing.module';
 import { CourseCategoriesComponent } from './course-categories/course-categories.component';
 import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
+import { ApprovalListComponent } from './approval-list/approval-list.component';
+import { CompletionListComponent } from './completion-list/completion-list.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { CreateScheduleComponent } from './create-schedule/create-schedule.compo
     CoursekitComponent,
     CourseApprovalComponent,
     CourseCategoriesComponent,
-    CreateScheduleComponent
+    CreateScheduleComponent,
+    ApprovalListComponent,
+    CompletionListComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,8 @@ import { EditScheduleComponent } from './edit-schedule/edit-schedule.component';
 import { Editschedule2Component } from './editschedule2/editschedule2.component';
 import { CourseCategoriesComponent } from './course-categories/course-categories.component';
 import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
+import { ApprovalListComponent } from './approval-list/approval-list.component';
+import { CompletionListComponent } from './completion-list/completion-list.component';
 
 const routes: Routes = [
   {path: '', component: ScheduleComponent},
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'Schedule Class/List', component: ScheduleComponent},
   {path: 'Schedule Class/Edit/1', component: EditScheduleComponent},
   {path: 'Schedule Class/Edit/2', component: Editschedule2Component},
+  {path: 'Schedule Class/Approve List', component: ApprovalListComponent},
+  {path: 'Schedule Class/Completion List', component: CompletionListComponent},
   {path: 'Course', component: EditCourseCreateComponent},
   {path: 'Course/Course Approval', component: CourseApprovalComponent},
   {path: 'Course/Course Kit', component: CoursekitComponent},
