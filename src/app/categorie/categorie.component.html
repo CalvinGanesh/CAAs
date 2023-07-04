@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="top">
+        <div class="title">
+            <h1>Categories</h1>
+        </div>
+
+        <div class="col-4">
+            <button class="button">
+                <p style="font-family: Nunito;
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 8px;"> Create Categories </p>
+            </button>
+        </div>
+        <div class="buttons" style="float: right; margin-right: 30px;">
+            <input type="file" id="input" name="somename" size="chars">
+            <button id="export" (click)="upload()">
+                <p style="display: inline-block;">Export</p>
+                <img src="/assets/download-folder.svg" alt="icon">
+            </button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="table-border">
+            <div class="table">
+                <div class="header">
+                    <p *ngFor="let h of headeritems">{{h}}</p>
+                </div>
+                <div class="item" *ngFor="let item of items">
+                    <div class="main-category">
+                        <p>{{item.Maincategory}}</p>
+                    </div>
+                    <div class="sub-category">
+                        <p>{{item.Subcategory}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

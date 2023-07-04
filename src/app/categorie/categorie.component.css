@@ -1,0 +1,151 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F8F8F8;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 1189px;
+    display: block;
+    z-index: -10;
+    align-items: center;
+    font-family: 'Nunito';
+}
+
+.top {
+    margin-top: 130px;
+    margin-left: 533px;
+}
+
+.top div {
+    display: inline-block;
+   
+}
+
+.col-4 button{
+    position: absolute;
+    border: 1px solid #000000;
+    background-color: #e7e5e5;
+    border-radius: 9px;
+    border-color: #ff000f;
+    width: 160px;
+    height: 40px;
+    margin-top: -29px;
+    margin-left: 170px;
+    
+}
+
+#export {
+    margin-left: 30px;
+    display: inline-flex;
+    width: 157.689px;
+    height: 41px;
+    padding: 8px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #FFAE3B;
+    color: #FFF;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    top: 23px;
+    left: -192px;
+    box-shadow: none;
+}
+
+#export p {
+    position: relative;
+    top: 1px;
+}
+
+#export img {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+}
+
+input {
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+.table-border{
+    width: 852px;
+    height: 420px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: #FFF;
+    margin-left: 400px;
+}
+.table{
+    margin-left: 0px;
+    
+}
+.table .header {
+    padding: 25px 0px;
+    width: 850px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 28px 28px 0px 0px;
+    background: #EBEBEB;
+    text-align: center;
+    
+}
+
+.table .header p {
+    display: inline;
+    margin-left: 250px;
+    width: fit-content;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #4B4B4B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    position: relative;
+    left: -183px;     
+}
+
+.item {
+    width: 718.039px;
+    height: 40.328px;
+    flex-shrink: 0;
+    padding-left: 135px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 374px);
+    border-bottom: rgba(200, 200, 200, 1) solid 1px;
+}
+
+.item div {
+    display: inline-block;
+    margin-top: -15px;
+}
+
+.item p {
+    font-family: 'Nunito';
+    line-height: 27px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.35957446694374084px;
+    text-align: left;
+    color: #252F40;
+
+}
+.item:last-child {
+    border-bottom: none;
+  }
+  
+  .item:nth-last-child(1) {
+      border-bottom: none;
+  }
+  
