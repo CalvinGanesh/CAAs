@@ -20,6 +20,10 @@ import { CoursekitComponent } from './coursekit/coursekit.component';
 import { FormsModule } from '@angular/forms';
 import { CourseApprovalComponent } from './course-approval/course-approval.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CourseCategoriesComponent } from './course-categories/course-categories.component';
+import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
+import { ApprovalListComponent } from './approval-list/approval-list.component';
+import { CompletionListComponent } from './completion-list/completion-list.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { AppRoutingModule } from './app-routing.module';
     MultiSelectDropdownComponent,
     DdComponent,
     CoursekitComponent,
-    CourseApprovalComponent
+    CourseApprovalComponent,
+    CourseCategoriesComponent,
+    CreateScheduleComponent,
+    ApprovalListComponent,
+    CompletionListComponent
   ],
   imports: [
     BrowserModule,
